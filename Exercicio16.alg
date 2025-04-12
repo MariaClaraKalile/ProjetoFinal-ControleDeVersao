@@ -1,5 +1,5 @@
 Algoritmo "InverterNumero"
-
+Função: Gerar o valor invertido de um número com três algarismos
 Var
     numero, centena, dezena, unidade, invertido: inteiro
 
