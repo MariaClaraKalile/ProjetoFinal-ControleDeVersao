@@ -1,7 +1,5 @@
-Algoritmo "PermutarVariavéis"
+Algoritmo "PermutarVariaveis"
 //Descrição: Permutar o valor de duas variáveis inteiras.
-
-
 
 Var
    a,b: inteiro
