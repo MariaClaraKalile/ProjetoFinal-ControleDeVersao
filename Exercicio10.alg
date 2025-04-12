@@ -3,30 +3,33 @@ Algoritmo "InteiropBinario"
 // Descrição: Converter um inteiro informado menor que 32 para sua representação em binário
 // Autor: Yasmin Azevedo
 
-Var
-    numero, i: inteiro
-    binario: caractere
+var
+   n,i : inteiro
+   binario : caractere[6] // Vetor de 6 caracteres para armazenar os bits
+inicio
+   escreva("Digite um numero inteiro menor que 32: ")
+   leia(n)
 
-Inicio
-    binario <- ""
+   // Verifica se o numero esta no intervalo permitido
+   se (n >= 0) e (n < 32) entao
+      // Inicializa o vetor binario
+      para i de 1 ate 6 faca
+         binario[i] <- "0"
+      fimPara
+      
+      i <- 6
+      enquanto n > 0 faca
+         binario[i] <- (n % 2) + "0"  // Converte o resto da divisao para caractere
+         n <- n / 2
+         i <- i - 1
+      fimEnquanto
 
-    escreval("Digite um número inteiro menor que 32: ")
-    leia(numero)
-
-    se numero >= 32 ou numero < 0 entao
-        escreval("O número deve ser menor que 32 e não pode ser negativo!")
-    senao
-        // Converte para binário
-        para i de 1 ate 5 faca
-            se numero % 2 = 1 entao
-                binario <- "1" + binario
-            senao
-                binario <- "0" + binario
-            fimse
-            numero <- numero div 2
-        fimpara
-
-        escreval("O número em binário é: ", binario)
-    fimse
-
-Fimalgoritmo
+      escreva("Representacao binaria: ")
+      para i de 1 ate 6 faca
+         escreva(binario[i])
+      fimPara
+      escreva("\n")
+   senao
+      escreva("Numero deve ser menor que 32!\n")
+   fimSe
+fimalgoritmo
