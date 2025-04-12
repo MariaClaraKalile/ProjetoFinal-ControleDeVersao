@@ -1,5 +1,4 @@
 Algoritmo "VolumeLataOleo"
-// Disciplina  :  [Linguagem e Lógica de Programação]
 // Descrição   : Calcular e apresentar o valor do volume de uma lata de óleo.
 // Autor: Yasmin Azevedo
 
