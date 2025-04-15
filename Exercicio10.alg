@@ -24,12 +24,4 @@ inicio
          i <- i - 1
       fimEnquanto
 
-      escreva("Representacao binaria: ")
-      para i de 1 ate 6 faca
-         escreva(binario[i])
-      fimPara
-      escreva("\n")
-   senao
-      escreva("Numero deve ser menor que 32!\n")
-   fimSe
-fimalgoritmo
+     
